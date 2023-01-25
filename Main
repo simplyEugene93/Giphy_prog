@@ -1,0 +1,16 @@
+import json
+from urllib import parse, request
+
+users_input = str(input("Enter the key word for a GIF you want: "))
+url = "http://api.giphy.com/v1/gifs/search"
+
+params = parse.urlencode({
+  "q": users_input,
+  "api_key": "s1FpwS7zuxxEFlU1UNYTaLQmddUh86aL",
+  "limit": "50"
+})
+
+with request.urlopen("".join((url, "?", params))) as response:
+  data = json.loads(response.read())
+
+print(json.dumps(data))
