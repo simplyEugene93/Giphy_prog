@@ -1,0 +1,2 @@
+API_BOT = "5907064196:AAE_WeMIcajfMhwdHTworiQjbK6551uHQj4"
+Giphy_API = "s1FpwS7zuxxEFlU1UNYTaLQmddUh86aL"
